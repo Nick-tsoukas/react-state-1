@@ -28,6 +28,7 @@ class Button extends Component {
             clicked: false
         }
         // must bind this to handleClick function using bind() sets the context to the click function
+        // there are many ways to bind the methods but I like this one because all methods will be writtin and bound in the constructor function at the top
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick(e) {
