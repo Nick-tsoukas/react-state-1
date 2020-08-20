@@ -4,14 +4,12 @@ import './App.css';
 import Game from './Game';
 import Random from './Random';
 import Button from './Button';
+import RandomGame from './RandomGame';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world</h1>
-      <Game />
-      <Random maxNum={100} />
-      <Button />
+      <RandomGame />
     </div>
   );
 }
