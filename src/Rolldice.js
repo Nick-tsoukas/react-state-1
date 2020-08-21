@@ -33,8 +33,8 @@ class Rolldice extends Component {
         return (
             <div>
                 <section className="Rolldice-container">
-                <Dice number={this.state.diceOne} />
-                <Dice number={this.state.diceTwo} />
+                <Dice rollingNow={this.state.rolling} number={this.state.diceOne} />
+                <Dice rollingNow={this.state.rolling} number={this.state.diceTwo} />
                 </section>
                 <RollButton rollingNow={this.state.rolling} handler={this.rolling} />
             </div>
