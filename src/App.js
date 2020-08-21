@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Score from './Score';
+import Iconlist from './Iconlist';
+
 
 function App() {
   return (
     <div className="App">
-      <Score />
+      <Iconlist />
     </div>
   );
 }
