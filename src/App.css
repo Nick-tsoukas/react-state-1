@@ -53,3 +53,14 @@
   align-items: center;
 
 }
+
+/*  Coin flipping */
+
+.FlipGame-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Coin-image {
+  height: 100px;
+}
