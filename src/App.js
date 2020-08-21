@@ -5,11 +5,12 @@ import Game from './Game';
 import Random from './Random';
 import Button from './Button';
 import RandomGame from './RandomGame';
+import Rolldice from './Rolldice';
 
 function App() {
   return (
     <div className="App">
-      <RandomGame />
+      <Rolldice />
     </div>
   );
 }
