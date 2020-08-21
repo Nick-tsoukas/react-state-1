@@ -64,3 +64,44 @@
 .Coin-image {
   height: 100px;
 }
+
+/*  ColorBox css */
+
+.ColorBox {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Box {
+  width: 300px;
+  height: 150px;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+.yellow { 
+  background: yellow;
+}
+
+.pink {
+  background: pink;
+}
+
+.purple {
+  background: purple;
+}
+
+.black {
+  background: black;
+}

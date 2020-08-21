@@ -1,14 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import FlipGame from './FlipGame';
-
+import ColorBox from './ColorBox';
 
 function App() {
   return (
     <div className="App">
-      <h1>Lets Flip a Coin</h1>
-      <FlipGame />
+      <ColorBox />
     </div>
   );
 }
