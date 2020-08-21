@@ -119,6 +119,60 @@ function isPrime(element, index, array) {
 
 console.log([4, 6, 8, 12].find(isPrime)); // undefined, not found
 console.log([4, 5, 8, 12].find(isPrime)); // 5
+
+// calculating age with moment.js 
+moment().diff(moment('20120507', 'YYYYMMDD'), 'years')
+
 ```
 
 ### Mutable data structures 
+notes 
+    - Safest way to update state is to make a copy of it and the setState with new copy of data
+        - This helps debugging the app at the cost of less efficiency
+        - Use pure functions 
+        - Required for using redux
+
+    - Minimize your state if data doesn't change it should be a prop
+    - Try too keep state minimal 
+    - State should live in the parent component ... downward data flow 
+
+### LottoGame 
+notes 
+    - Simple lotto game with a reusable lotto component using props and state
+
+```javascript 
+class LottoGame extends Component {
+    // we have pops like title numBalls maxNum
+    constructor(props){
+        super(props);
+        this.state = {
+            numbers : []
+        }
+        this.generate = this.generate.bind(this);
+    }
+
+    generate(){
+        let balls = [];
+        for(let i=0; i<this.props.numBalls; i++){
+            balls.push(Math.floor(Math.random() * this.props.maxNum));
+        }
+        this.setState({numbers: balls});
+    }
+
+    render(){
+        return (
+            <div>
+                <h1>{this.props.title}</h1>
+                <div className="LottoGame-balls">
+                    {
+                        this.state.numbers.map((n) => {
+                           return <p className="LottoGame-padding">{n}</p>
+                        })
+                    }
+                </div>
+                <button onClick={this.generate}>Generate Numbers</button>
+            </div>
+        )
+    }
+}
+```
