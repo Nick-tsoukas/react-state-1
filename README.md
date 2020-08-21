@@ -182,6 +182,16 @@ class LottoGame extends Component {
     - notice how we update the state on coin flip
 
 ```javascript 
+// here we pass in a function to setState using the st as the current state parameter
+this.setState(st => {
+            return {
+                coin : flip,
+                numFlipped: st.numFlipped + 1,
+                headCount: st.headCount + (flip.side === 'heads' ? + 1 : + 0),
+                tailCount: st.tailCount + (flip.side === 'tails' ? + 1 : + 0)
+            }
+        })
+
 class FlipGame extends Component {
     constructor(props){
         super(props);
