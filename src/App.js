@@ -1,12 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import ColorBox from './ColorBox';
+
+import NumberList from './NumberList';
+
 
 function App() {
   return (
     <div className="App">
-      <ColorBox />
+      <NumberList />
     </div>
   );
 }

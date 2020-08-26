@@ -266,4 +266,27 @@ class Box extends Component {
     - attach event handlers to compnents in react 
     - Use method binding to preserve the this context with event handlers
     - Pass event handlers down to child components as props
-    - Understand the key prop when using map
+    - Understand the key prop in react
+
+### binding with arguments 
+```javascript 
+
+constructor(props){
+    super(props);
+    this.state = { color: "red"};
+}
+
+changeColor(newColor){
+    this.setState = { color: newColor }
+}
+
+...
+
+<button onClick={this.changeColor.bind(this, argument)}></button>
+// or you can use an arrow function as opposed to binding 
+<button onClick={() => this.changeColor(AgumentGoesHere)}> </button>
+// There is a better way coming soon ....
+
+```
+
+### passing functions down to child components
