@@ -105,3 +105,10 @@
 .black {
   background: black;
 }
+
+/* shopping list  */
+
+.ShoppingListForm {
+  display: flex;
+  flex-direction: column;
+}
