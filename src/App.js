@@ -1,14 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-import ShoppingList from './ShoppingList';
+import BoxList from './BoxList';
 
 
 function App() {
   return (
     <div className="App">
-      <ShoppingList />
+      <BoxList />
     </div>
   );
 }
