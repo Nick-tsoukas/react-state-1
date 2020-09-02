@@ -1,13 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import BoxList from './BoxList';
+
 
 
 function App() {
   return (
     <div className="App">
-      <BoxList />
+      <h1>There is no child component right now </h1>
     </div>
   );
 }

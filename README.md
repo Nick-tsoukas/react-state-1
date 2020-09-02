@@ -289,4 +289,7 @@ changeColor(newColor){
 
 ```
 
-### passing functions down to child components
+### React Forms
+Notes about react forms using controlled components
+    - React state is source of truth
+
