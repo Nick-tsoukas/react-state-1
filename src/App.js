@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
+import Zen from './Zen';
 
 
 
 function App() {
   return (
     <div className="App">
-      <h1>There is no child component right now </h1>
+      <Zen />
     </div>
   );
 }
